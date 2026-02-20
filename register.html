@@ -1,0 +1,47 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa - Registro</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="card shadow-lg p-4" style="width: 25rem;">
+            <h3 class="text-center mb-4 text-success">Registro de Usuario</h3>
+            
+            <form id="registerForm">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cedula" class="form-label">Cédula</label>
+                    <input type="text" class="form-control" id="cedula" required>
+                </div>
+                <div class="mb-3">
+                    <label for="fecha" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" id="fecha" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+
+                <button type="submit" class="btn btn-success w-100">Registrar</button>
+            </form>
+
+            <div class="text-center mt-3">
+                <p>¿Ya tienes una cuenta? <a href="index.html" class="text-decoration-none">Inicia sesión aquí</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y script propio -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
